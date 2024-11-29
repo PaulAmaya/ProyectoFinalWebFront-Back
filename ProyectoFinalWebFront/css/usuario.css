@@ -1,0 +1,187 @@
+/* Estilo base */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 15px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.menu a.active,
+.menu a:hover {
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #f8f8f8;
+    overflow: auto;
+}
+
+.main-content h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+
+.main-content a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.main-content a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+#logout-link {
+    font-size: 0.9em;
+    color: #e63946;
+    margin-left: 10px;
+}
+
+#logout-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        box-shadow: none;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    table th, 
+    table td {
+        padding: 8px;
+    }
+
+    table th {
+        font-size: 0.9em;
+    }
+
+    .main-content h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        box-shadow: none;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .sidebar h2 {
+        font-size: 1.2em;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu a {
+        font-size: 0.9em;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .main-content h1 {
+        font-size: 1.2em;
+    }
+
+    table th,
+    table td {
+        padding: 5px;
+        font-size: 0.8em;
+    }
+
+    table th {
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 5px 10px;
+    }
+}

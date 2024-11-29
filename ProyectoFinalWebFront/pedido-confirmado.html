@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido-confirmado</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/pedido-confirmado.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/logo.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-libro">Libro</span><span class="logo-xstore">XStore</span>
+                </a>
+            </div>
+             <input type="checkbox" id="menuToggle" class="menu-checkbox">
+             <label for="menuToggle" class="menu-icon">
+             <span>&#9776; Menu</span>
+             </label>
+     
+             <div class="search-cart">
+                <input type="text" id="search-input" placeholder="Search">
+                <button id="search-button">🔍</button>
+                 <a href="como_comprar.html">Como Comprar?</a>
+                 <a href="carrito.html">🛒Cart (<span id="cart-count">0</span>)</a>
+                 <a href="usuario.html" id="user-name-display">👤 Usuario</a>
+             </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="confirmation-section">
+            <h1>¡Gracias por tu compra!</h1>
+            <p>Tu pedido ha sido confirmado y está listo para ser procesado.</p>
+            <div class="order-summary">
+                <h2>Información del Pedido</h2>
+                <div class="order-details">
+                    <p><strong>Pedido ID:</strong> <span id="pedido-id">12345</span></p>
+                    <p><strong>Fecha:</strong> <span id="pedido-fecha">2024-11-27</span></p>
+                    <p><strong>Total:</strong> <span id="pedido-total">$50.00</span></p>
+                </div>
+                <div class="shipping-details">
+                    <p><strong>Hacer envío hacia:</strong></p>
+                    <p id="direccion">Cargando dirección...</p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 LibroXStore - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/pedido-confirmado.js"></script>
+</body>
+</html>

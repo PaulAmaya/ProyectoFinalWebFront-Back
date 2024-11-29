@@ -1,0 +1,94 @@
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    margin: 40px 0;
+}
+
+.category_tittle {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.category_tittle h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.category {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    border-radius: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.category h3 {
+    z-index: 2; 
+    position: relative;
+}
+
+.category::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.category h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-size: 1em;
+    color: #333;
+}
+
+.categories a {
+    text-decoration: none;
+    display: block;
+}
+
+.categories a:hover {
+    opacity: 0.9;
+}
+
+
+@media (max-width: 425px) {
+    .categories {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
+
+    .category {
+        height: 150px; 
+        font-size: 1.2em;
+    }
+}
+
+/* Para tablets (768px o menos) */
+@media (max-width: 768px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
+
+    .category {
+        height: 180px; 
+    }
+}

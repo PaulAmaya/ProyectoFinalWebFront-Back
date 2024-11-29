@@ -1,0 +1,175 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    max-height: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.order-summary {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.order-summary h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.order-details,
+.shipping-details {
+    margin-bottom: 20px;
+}
+
+.direccion-input {
+    width: calc(100% - 90px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.save-address-container {
+    text-align: right;
+}
+
+.pay-section {
+    margin-top: 30px;
+}
+
+.pay-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.pay-button:hover {
+    background-color: #005bb5;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .order-summary {
+        padding: 15px;
+    }
+
+    .order-summary h2 {
+        font-size: 1.4em;
+    }
+
+    .direccion-input {
+        width: calc(100% - 80px);
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+
+    .pay-button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .order-summary {
+        padding: 10px;
+    }
+
+    .order-summary h2 {
+        font-size: 1.2em;
+    }
+
+    .direccion-input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .save-address-container {
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .pay-button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

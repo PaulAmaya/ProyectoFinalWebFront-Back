@@ -1,0 +1,97 @@
+/* main.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.hero {
+    background-image: url('/img/bannerLibros.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    padding: 60px;
+    color: white; 
+    text-align: left;
+    position: relative; 
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: white; 
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1, .hero p, .cta-button {
+    position: relative;
+    z-index: 2; 
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #333; 
+}
+
+
+@media (max-width: 425px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta - LibroXStore</title>
+    <link rel="stylesheet" href="css/usuario.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-libro">Libro</span><span class="logo-xstore">XStore</span>
+                </a>
+            </div>
+             <input type="checkbox" id="menuToggle" class="menu-checkbox">
+             <label for="menuToggle" class="menu-icon">
+             <span>&#9776; Menu</span>
+             </label>
+     
+             <div class="search-cart">
+                <input type="text" id="search-input" placeholder="Search">
+                <button id="search-button">🔍</button>
+                 <a href="como_comprar.html">Como Comprar?</a>
+                 <a href="carrito.html">🛒Cart (<span id="cart-count">0</span>)</a>
+                 <a href="usuario.html" id="user-name-display">👤 Usuario</a>
+             </div>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Mi Cuenta</h2>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" class="active">Escritorio</a></li>
+                    <li><a href="#" id="view-orders">Pedidos</a></li>
+                    <li><a href="#" id="logout-button">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <h1>Hola <span id="user-name">Usuario</span> <a href="#" id="logout-link">(Cerrar sesión)</a></h1>
+            <p>Desde el escritorio de tu cuenta puedes ver tus <a href="#" id="view-orders-text">pedidos recientes </a>.</p>
+            
+            <section id="orders-section" style="display: none;">
+                <h2>Mis Pedidos</h2>
+                <table id="orders-table">
+                    <thead>
+                        <tr>
+                            <th>ID Pedido</th>
+                            <th>Fecha</th>
+                            <th>Total</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        
+    </div>
+    <footer>
+        <p>&copy; 2024 LibroXStore - Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/usuario.js"></script>
+</body>
+</html>

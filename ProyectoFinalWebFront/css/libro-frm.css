@@ -1,0 +1,125 @@
+/* libro-frm.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    color: black;
+    background-color: #5bc15f;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 40px 0;
+}
+
+img {
+    border-radius: 30%;
+    width: 150px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; 
+    transition: all 0.3s ease;
+    display: inline-block; 
+}
+
+
+.btn-primary {
+    background-color: #007BFF; 
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+.btn-secondary {
+    background-color: #6c757d; 
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; 
+    transform: scale(1.05); 
+}
+
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+}

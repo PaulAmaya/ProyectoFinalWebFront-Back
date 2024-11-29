@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - LibroXStore</title>
+    <link rel="stylesheet" href="/css/registro.css">
+    <link rel="stylesheet" href="/css/logo.css">
+</head>
+<body>
+    <div class="background-image">
+        <div class="container">
+            <div class="left-panel">
+                <div class="logo">
+                    <span class="logo-libro">Libro</span><span class="logo-xstore">XStore</span>
+                </div>
+                <p>La Tienda online Donde encontrarás tus Libros favoritos al mejor precio</p>
+            </div>
+            <div class="right-panel">
+                <form class="registration-form" id="registrationForm">
+                    <div class="form-group">
+                        <input type="text" id="nombreCompleto" name="nombreCompleto" placeholder="Nombre Completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="direccion" name="direccion" placeholder="Dirección" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefono" name="telefono" placeholder="Número de Teléfono" required>
+                    </div>
+                    <p id="msg-error-register" style="color: red; text-align: center;"></p>
+                    <button type="submit" id="btn-register">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/registro.js"></script> 
+</body>
+</html>

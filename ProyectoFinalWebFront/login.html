@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - LibroXStore</title>
+    <link rel="stylesheet" href="/css/registro.css"> 
+    <link rel="stylesheet" href="/css/logo.css"> 
+    <link rel="stylesheet" href="/css/login.css"> 
+</head>
+<body>
+    <div class="background-image">
+        <div class="container">
+            <div class="left-panel">
+                <div class="logo">
+                    <span class="logo-libro">Libro</span><span class="logo-xstore">XStore</span>
+                </div>
+                <p>La Tienda online Donde encontrarás tus Libros favoritos al mejor precio</p>
+            </div>
+            <div class="right-panel">
+                <form id="login-form" class="login-form">
+                    <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                    
+                    <button type="submit" class="login-button">Iniciar sesión</button>
+                    
+                    <p id="error-message" style="color: red; text-align: center; margin-top: 10px;"></p>
+                    
+                    <a href="#" id="btn-guest" class="view-products">Entrar como Invitado</a>
+                    
+                    <p class="forgot-password"><a href="#">¿Olvidaste tu contraseña?</a></p>
+                    <p class="register-text">¿No tienes cuenta? <a href="registro.html" class="register-link">Regístrate</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

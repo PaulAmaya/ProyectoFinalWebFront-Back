@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - LibroXStore</title>
+    <link rel="stylesheet" href="css/vistaAdmin.css">
+    <link rel="stylesheet" href="css/logo.css">
+</head>
+<body>
+    
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li id="menu-books" class="active">📖 Libros</li>
+                <li id="menu-orders">🛒 Pedidos</li>
+                <li id="menu-generos">📚 Generos</li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="login.html" class="logout">Cerrar Sesión</a>
+        </div>
+    </aside>
+
+    <main class="admin-content">
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <a href="#">
+                        <span class="logo-libro">Libro</span><span class="logo-xstore">XStore</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <h1 id="view-title">Gestión de Libros</h1>
+        <section class="content-section">
+            <h2>Datos</h2>
+            <div id="data-table">
+            </div>
+        </section>
+        <footer class="pagination">
+            <button class="page-btn" data-page="prev">«</button>
+            <span id="current-page">1</span>
+            <button class="page-btn" data-page="next">»</button>
+        </footer>
+    </main>
+
+    <script src="js/vistaAdmin.js"></script>
+</body>
+</html>

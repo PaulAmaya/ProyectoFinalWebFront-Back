@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Carrito - LibroXStore</title>
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/logo.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-libro">Libro</span><span class="logo-xstore">XStore</span>
+                </a>
+            </div>
+             <input type="checkbox" id="menuToggle" class="menu-checkbox">
+             <label for="menuToggle" class="menu-icon">
+             <span>&#9776; Menu</span>
+             </label>
+     
+             <div class="search-cart">
+                <input type="text" id="search-input" placeholder="Search">
+                <button id="search-button">🔍</button>
+                 <a href="como_comprar.html">Como Comprar?</a>
+                 <a href="carrito.html">🛒Cart (<span id="cart-count">0</span>)</a>
+                 <a href="usuario.html" id="user-name-display">👤 Usuario</a>
+             </div>
+        </div>
+    </header>
+
+    <main class="cart-container">
+        <section class="cart-items">
+            <h2>Your Cart</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Titulo</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                </tbody>
+            </table>
+        </section>
+        <section class="cart-summary">
+            <h2>Resumen</h2>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 LibroXStore - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+</body>
+</html>

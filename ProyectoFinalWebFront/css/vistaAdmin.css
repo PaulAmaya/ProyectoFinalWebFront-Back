@@ -1,0 +1,186 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1em;
+}
+
+.sidebar nav ul li:hover,
+.sidebar nav ul li.active {
+    background-color: #444;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.sidebar-footer .logout {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    color: #0073e6;
+    font-size: 1.8em;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+table td .edit {
+    background-color: #0073e6;
+    color: white;
+}
+
+table td .delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.pagination button {
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #bbb;
+}
+
+.btn-add{
+    padding: 15px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+
+#add-book-button {
+    padding: 10px 20px;
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.edit-button,
+.delete-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.edit-button {
+    background-color: #49a3e2;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #3cb0ca; 
+    transform: scale(1.05);
+}
+
+.delete-button {
+    background-color: #f44336; 
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f; 
+    transform: scale(1.05); 
+}
+
+
+

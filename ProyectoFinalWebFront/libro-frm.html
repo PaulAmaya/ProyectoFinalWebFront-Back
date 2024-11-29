@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Libros</title>
+    <link rel="stylesheet" href="css/libro-frm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body style="display: none">
+    <div class="container">
+        <header>
+            <h1 id="page-title">Gestión de Libros</h1>
+        </header>
+        <main>
+            <section class="form-container">
+                <h2>Formulario de Gestión de Libros</h2>
+                <form id="add-book-form">
+                    <input type="hidden" id="libroid" value="0">
+                    <div class="form-group">
+                        <label for="titulo">Título</label>
+                        <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Ingrese el título del libro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="autor">Autor</label>
+                        <input type="text" id="autor" name="autor" class="form-control" placeholder="Ingrese el autor del libro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editorial">Editorial</label>
+                        <input type="text" id="editorial" name="editorial" class="form-control" placeholder="Ingrese la editorial del libro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="isbn">ISBN</label>
+                        <input type="text" id="isbn" name="isbn" class="form-control" placeholder="Ingrese el ISBN del libro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="precio">Precio</label>
+                        <input type="number" id="precio" name="precio" class="form-control" step="0.01" placeholder="Ingrese el precio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="stock">Stock</label>
+                        <input type="number" id="stock" name="stock" class="form-control" placeholder="Ingrese la cantidad en stock" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="generoid">Género</label>
+                        <select id="generoid" name="genero" class="form-control" required>
+                            <option value="" disabled selected>Seleccione un género</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" name="descripcion" class="form-control" placeholder="Ingrese una descripción"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="imageUploader">Imagen</label>
+                        <input type="hidden" id="imagenid" value="0">
+                        <input type="file" id="imageUploader" class="form-control">
+                        <img id="miniatura" src="img/bannerLibros.jpg" class="img-thumbnail mt-3" alt="Vista previa de la imagen">
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" id="btn-save" class="btn btn-primary">Guardar</button>
+                        <a href="vistaAdmin.html" class="btn btn-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="js/libro-frm.js"></script>
+</body>
+</html>

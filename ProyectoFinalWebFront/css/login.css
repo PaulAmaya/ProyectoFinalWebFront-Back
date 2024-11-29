@@ -1,0 +1,162 @@
+.login-form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    font-size: 3.5em;
+}
+
+.login-form input {
+    padding: 12px;
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.login-button {
+    padding: 12px;
+    background-color: #0000FF; 
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.login-button:hover {
+    background-color: #00008B;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: #333;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.view-products {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #00BFFF; 
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.view-products:hover {
+    background-color: #1E90FF;
+}
+
+.register-text {
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.register-link {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .background-image {
+        background-position: top;
+        padding: 20px;
+    }
+
+    .container {
+        width: 90%;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: none; 
+    }
+
+    .login-form {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .login-button {
+        font-size: 0.9em;
+    }
+
+    .forgot-password a {
+        font-size: 0.85em;
+    }
+
+    .view-products {
+        font-size: 0.9em;
+    }
+
+    .register-text {
+        font-size: 0.85em;
+    }
+
+    .register-link {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 425px) {
+    .background-image {
+        background-position: top;
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        box-shadow: none; 
+    }
+
+    .login-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .login-button {
+        font-size: 0.85em;
+    }
+
+    .forgot-password a {
+        font-size: 0.8em;
+    }
+
+    .view-products {
+        font-size: 0.85em;
+    }
+
+    .register-text {
+        font-size: 0.8em;
+    }
+
+    .register-link {
+        font-size: 0.8em;
+    }
+}

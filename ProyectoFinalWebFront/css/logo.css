@@ -1,0 +1,39 @@
+a {
+    text-decoration: none; 
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.logo-libro {
+    color: #333; 
+    margin-right: 5px;
+}
+
+.logo-xstore {
+    color: #3CB371; 
+    font-weight: 400;
+}
+
+.logo::after {
+    content: '📖'; 
+    font-size: 0.5em;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 425px) {
+    .logo {
+        font-size: 1.5em;
+    }
+}
